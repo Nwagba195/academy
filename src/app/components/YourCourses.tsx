@@ -19,7 +19,7 @@ const YourCourses = () => {
     },
     {
       id: 2,
-      title: "ASO & Mobile App Marketing: Monetize Your App",
+      title: "Google Ads Training 2021: Profit with Pay",
       author: " Jon Kantner",
       cover_image: "/unsplash.png",
       student: 198,
@@ -32,7 +32,7 @@ const YourCourses = () => {
     },
     {
       id: 3,
-      title: "Python for Beginners - Learn Programming from scratch",
+      title: "Google Ads Training 2021: Profit with Pay",
       author: " Jon Kantner",
       cover_image: "/trend.png",
       student: 198,
@@ -52,7 +52,7 @@ const YourCourses = () => {
       lesson: 6,
       days: 56,
       points: 75,
-      teacher_image: "unsplash3.png",
+      teacher_image: "/unsplash3.png",
       role: "CEO",
       difficulty: "average",
     },
@@ -68,15 +68,15 @@ const YourCourses = () => {
         {yourBooks.map((book: IYBOOK) => {
           return (
             <div key={book.id} className="bg-[#FAFAFA] rounded-2xl p-4">
-              <div className="grid grid-cols-3 gap-8">
+              <div className="grid xl:grid-cols-3 grid-cols-1 xl:gap-8 space-y-2 xl:space-y-0">
                 <img
-                  className="rounded-lg"
                   src={book.cover_image}
                   alt={book.title}
+                  className="w-full"
                 />
-                <div className=" flex xl:text-[16px] flex-col col-span-2 justify-between items-start">
+                <div className=" flex flex-col col-span-2 space-y-4 xl:space-y-0 justify-between items-start">
                   <h1>{book.title}</h1>
-                  <div className="grid grid-cols-3">
+                  <div className="flex items-center justify-between w-full">
                     <div>Lesson: {book.lesson}</div>
                     <div>Student: {book.student}</div>
                     <div>Average: {book.difficulty}</div>
@@ -92,11 +92,7 @@ const YourCourses = () => {
                   </div>
                   <div className="flex items-center justify-between w-full">
                     <div className="flex items-center justify-center gap-4">
-                      <img
-                        className="rounded-xl"
-                        src={book.teacher_image}
-                        alt={book.teacher_image}
-                      />
+                      <img src={book.teacher_image} alt={book.teacher_image} />
                       <div>
                         <h2 className="font-medium">{book.author}</h2>
                         <h2>{book.role}</h2>

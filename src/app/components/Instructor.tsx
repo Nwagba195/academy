@@ -25,7 +25,7 @@ const Instructor = () => {
       </div>
       <div className="items-center my-7 justify-center">
         <img
-          className=" w-[744px] h-[488px] items-center justify-center"
+          className=" xl:w-[744px] xl:h-[488px] items-center justify-center"
           src="/instructors.png"
           alt=""
         />

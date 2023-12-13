@@ -13,11 +13,11 @@ function classNames(...classes: string[]) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-white px-[204px] shadow">
+    <Disclosure as="nav" className="bg-white xl:px-[204px] px-8 shadow">
       {({ open }) => (
         <>
-          <div className="py-12  sm:px-4 lg:px-8">
-            <div className="flex h-16 justify-between">
+          <div className="py-4 px-4 md:px-8">
+            <div className="flex items-center justify-between">
               <div className="flex px-2 lg:px-0">
                 <div className="flex flex-shrink-0 gap-4 items-center">
                   <img
@@ -25,7 +25,7 @@ export default function Example() {
                     src="/Group.svg"
                     alt="Your Company"
                   />
-                  <span className="font-rubik text-[32px] font-black">
+                  <span className="font-rubik text-[24px] md:text-[32px] font-black">
                     ACADEMY
                   </span>
                 </div>
@@ -58,7 +58,7 @@ export default function Example() {
                 </div>
               </div>
               <div className="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end">
-                <div className="w-full max-w-lg lg:max-w-xs">
+                <div className="hidden md:hidden lg:w-full lg:flex md:max-w-lg lg:max-w-xs">
                   <label htmlFor="search" className="sr-only">
                     Search
                   </label>
@@ -132,35 +132,35 @@ export default function Example() {
                 href="#"
                 className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
               >
-                Dashboard
+                Teach
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800"
               >
-                Team
+                Contact Us
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800"
               >
-                Projects
+                About Us
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800"
               >
-                Calendar
+                <Dropdown />
               </Disclosure.Button>
             </div>
             <div className="border-t border-gray-200 pb-3 pt-4">
               <div className="flex items-center px-4">
                 <div className="flex-shrink-0">
                   <img
-                    className="h-10 w-10 rounded-full"
+                    className="h-10 w-10 rounded"
                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
                   />
@@ -181,29 +181,6 @@ export default function Example() {
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
-              </div>
-              <div className="mt-3 space-y-1">
-                <Disclosure.Button
-                  as="a"
-                  href="#"
-                  className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
-                >
-                  Your Profile
-                </Disclosure.Button>
-                <Disclosure.Button
-                  as="a"
-                  href="#"
-                  className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
-                >
-                  Settings
-                </Disclosure.Button>
-                <Disclosure.Button
-                  as="a"
-                  href="#"
-                  className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
-                >
-                  Sign out
-                </Disclosure.Button>
               </div>
             </div>
           </Disclosure.Panel>

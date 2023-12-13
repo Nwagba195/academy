@@ -31,16 +31,16 @@ const TopCourses = () => {
   };
 
   return (
-    <div className="px-[204px]">
+    <div className="xl:px-[204px] px-8">
       <div className="flex items-center justify-between">
         <h1>.TOP COURSES</h1>
-        <Pagination
+        {/* <Pagination
           data={books}
           itemsPerPage={itemsPerPage}
           onPageChange={handlePageChange}
-        />
+        /> */}
       </div>
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {loading && <p>Loadin....</p>}
         {currentPage &&
           currentPage.map((book: IBook) => {

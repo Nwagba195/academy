@@ -37,8 +37,8 @@ const Books = () => {
   };
 
   return (
-    <div>
-      <div className="grid grid-cols-4 gap-8">
+    <div className="px-4 sm:px-8 lg:px-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {loading && <p>Loadin....</p>}
         {currentPage &&
           currentPage.map((book: IBook) => {

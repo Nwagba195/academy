@@ -26,9 +26,9 @@ const Section = () => {
           and find your favorite course
         </h1>
       </div>
-      <div className="flex items-center gap-6">
+      <div className="xl:flex space-y-4 xl:space-y-0 items-center gap-6">
         {/* input */}
-        <div className="w-[744px] flex items-center justify-start bg-[#FAFAFA] py-2 px-4 rounded-xl gap-4">
+        <div className="xl:w-[744px] w-full flex items-center justify-start bg-[#FAFAFA] py-2 px-4 rounded-xl gap-4">
           <button className="bg-black flex rounded-md py-4 text-white px-8 text-[14px] items-center justify-center">
             Categories
           </button>

@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mx-[204px] p-4 bg-[#FAFAFA] mt-24 rounded-2xl space-y-8">
-      <div className="flex items-center justify-between gap-8">
+    <div className="mx-4 xl:mx-[204px] p-4 bg-[#FAFAFA] mt-8 md:mt-24 rounded-2xl space-y-8">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-4 md:gap-8">
         <p className="p-6 bg-purple-50 rounded-2xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
@@ -21,7 +21,7 @@ const Footer = () => {
           <h1 className="font-black">ACADEMY</h1>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         <div className="space-y-4">
           <div>. MEMBERSHIP CERTIFICATE</div>
           <img src="/Certificate.svg" alt="Certificate" />

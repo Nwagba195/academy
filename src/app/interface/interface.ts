@@ -11,3 +11,13 @@ export interface BookState {
   error: string | undefined;
   itemsPerPage: number;
 }
+
+export interface IYBOOK extends IBook {
+  student: number;
+  lesson: number;
+  days: number;
+  points: number;
+  role: string;
+  teacher_image: string;
+  difficulty: string;
+}

@@ -3,6 +3,7 @@ import Section from "./components/Section";
 import Books from "./components/Books";
 import TopCourses from "./components/TopCourses";
 import NewsLetter from "./components/NewsLetter";
+import YourCourses from "./components/YourCourses";
 
 const HomePage = () => {
   return (
@@ -56,6 +57,7 @@ const HomePage = () => {
           <Books />
         </div>
       </div>
+      <YourCourses />
       {/* Newsletter */}
       <NewsLetter />
       {/* Top Courses */}

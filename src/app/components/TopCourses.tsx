@@ -12,14 +12,8 @@ export interface IBook {
   cover_image: string;
   author: string;
 }
-const Books = () => {
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    dispatch(fetchBooks());
-  }, []);
-
-  const itemsPerPage = 8;
+const TopCourses = () => {
+  const itemsPerPage = 4;
 
   const { books } = useAppSelector((state) => state.books);
   const { loading } = useAppSelector((state) => state.books);
@@ -37,7 +31,15 @@ const Books = () => {
   };
 
   return (
-    <div>
+    <div className="px-[204px]">
+      <div className="flex items-center justify-between">
+        <h1>.TOP COURSES</h1>
+        <Pagination
+          data={books}
+          itemsPerPage={itemsPerPage}
+          onPageChange={handlePageChange}
+        />
+      </div>
       <div className="grid grid-cols-4 gap-8">
         {loading && <p>Loadin....</p>}
         {currentPage &&
@@ -45,13 +47,8 @@ const Books = () => {
             return <Book key={book.id} book={book} />;
           })}
       </div>
-      <Pagination
-        data={books}
-        itemsPerPage={8}
-        onPageChange={handlePageChange}
-      />
     </div>
   );
 };
 
-export default Books;
+export default TopCourses;

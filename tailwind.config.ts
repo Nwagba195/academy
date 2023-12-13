@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
         rubik: ["Rubik", "sans-serif"],
       },
     },

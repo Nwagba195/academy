@@ -20,8 +20,8 @@ const HomePage = () => {
           </div>
           <div className="flex flex-row items-center justify-start gap-8">
             <div>
-              <button className="bg-black flex rounded-md py-2 lg:py-4 text-white px-4 text-sm lg:text-[14px] items-center justify-center">
-                Star Course Now
+              <button className="bg-black flex rounded-md py-2 lg:py-4 text-white px-4 text-[10px] lg:text-[14px] items-center justify-center">
+                Start Course Now
               </button>
             </div>
             <div className="flex">

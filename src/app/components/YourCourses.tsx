@@ -99,7 +99,7 @@ const YourCourses = () => {
                       </div>
                     </div>
                     <div className="flex items-center gap-4 justify-center bg-black text-white rounded-xl py-2 px-4">
-                      <h1>Let's Go</h1>
+                      <h1>Let&apos;s Go</h1>
                       <ArrowRightIcon className="w-5 h-5 shadow-xl" />
                     </div>
                   </div>

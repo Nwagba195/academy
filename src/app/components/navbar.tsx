@@ -99,8 +99,8 @@ export default function Example() {
                     <span className="absolute -inset-1.5" />
                     <span className="sr-only">Open user menu</span>
                     <img
-                      className="h-16 w-16 rounded"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      className="h-16 w-16 rounded-xl"
+                      src="/IMG_03999 1.png"
                       alt=""
                     />
                     <div className="flex flex-col items-center justify-around ml-3">

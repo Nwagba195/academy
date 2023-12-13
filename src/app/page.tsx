@@ -4,6 +4,7 @@ import Books from "./components/Books";
 import TopCourses from "./components/TopCourses";
 import NewsLetter from "./components/NewsLetter";
 import YourCourses from "./components/YourCourses";
+import Instructor from "./components/Instructor";
 
 const HomePage = () => {
   return (
@@ -57,6 +58,7 @@ const HomePage = () => {
           <Books />
         </div>
       </div>
+      <Instructor />
       <YourCourses />
       {/* Newsletter */}
       <NewsLetter />

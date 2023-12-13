@@ -19,7 +19,7 @@ const YourCourses = () => {
     },
     {
       id: 2,
-      title: "Google Ads Training 2021: Profit with Pay",
+      title: "ASO & Mobile App Marketing: Monetize Your App",
       author: " Jon Kantner",
       cover_image: "/unsplash.png",
       student: 198,
@@ -32,7 +32,7 @@ const YourCourses = () => {
     },
     {
       id: 3,
-      title: "Google Ads Training 2021: Profit with Pay",
+      title: "Python for Beginners - Learn Programming from scratch",
       author: " Jon Kantner",
       cover_image: "/trend.png",
       student: 198,
@@ -74,12 +74,12 @@ const YourCourses = () => {
                   src={book.cover_image}
                   alt={book.title}
                 />
-                <div className=" flex flex-col col-span-2 justify-between items-start">
+                <div className=" flex xl:text-[16px] flex-col col-span-2 justify-between items-start">
                   <h1>{book.title}</h1>
                   <div className="grid grid-cols-3">
                     <div>Lesson: {book.lesson}</div>
                     <div>Student: {book.student}</div>
-                    <div>: {book.difficulty}</div>
+                    <div>Average: {book.difficulty}</div>
                   </div>
                   <div className="w-full h-2 bg-[#FAFAFA] border-dashed border-2 rounded-full">
                     <div

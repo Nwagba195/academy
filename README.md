@@ -7,7 +7,7 @@ First, run the package installer:
 ```bash
 npm install
 ```
-Secon, run development server:
+Second, run the development server:
 
 ```bash
 npm run dev
@@ -35,6 +35,8 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
+import project to Vercel and deploy
+this is the link to the deployed version (https://academy-trial.vercel.app/)
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
